@@ -1,26 +1,3 @@
-// Open Botpress chatbot when buttons are clicked
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the CTA buttons
-    const startLearningBtn = document.querySelector('.cta-button');
-    const openTutorBtn = document.querySelector('.cta-btn');
-    
-    // Function to open Botpress chatbot
-    function openChatbot() {
-        if (window.botpressWebChat) {
-            window.botpressWebChat.sendEvent({ type: 'show' });
-        }
-    }
-    
-    // Add click event listeners
-    if (startLearningBtn) {
-        startLearningBtn.addEventListener('click', openChatbot);
-    }
-    
-    if (openTutorBtn) {
-        openTutorBtn.addEventListener('click', openChatbot);
-    }
-});
-
 // Simple chat functionality
 const messageInput = document.getElementById('messageInput');
 const chatMessages = document.getElementById('chatMessages');
